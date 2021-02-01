@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import Head from 'next/head';
+
 import styles from '~/styles/Home.module.css';
 
 const Home: React.FC = () => {
-  const [, setText] = useState<string>();
+  const [test, setText] = useState<string>();
 
   setTimeout(() => {
     setText('0');
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       <Head>
+        {test}
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
